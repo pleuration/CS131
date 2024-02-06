@@ -1,0 +1,16 @@
+  992  man
+  993  ping
+  994  ping -c
+  995  ls -latr
+  996  ls -lat
+  997  ls
+  998  tar
+  999  man tar
+ 1000  tar -h
+ 1001  wget www.github.com
+ 1002  wget
+ 1003  bash
+ 1004  tar
+ 1005  curl www.github.com
+ 1006  wget
+ 1007  history
