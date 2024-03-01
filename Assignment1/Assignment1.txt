@@ -25,7 +25,9 @@ cd myDir works, ls, and ls -l works in that directory. Making files DOES NOT.
 OUTPUT WHEN TRYING TO MAKE A FILE IN MYDIR:
 touch: cannot touch 'file': Permission denied
 -----------------------------------------------------------
-QUESTION 5
+QUESTION 5 
+!!GITHUB COMMIT WONT LET ME ADD EMPTY DIRECTORIES (myDir, and myDir2)!!
+!!SO THEY WONT SHOW UP ON THE REPOSITORY!!
 Created myDir2 with mkdir myDir2 after cd .. and myDir3 with mkdir myDir3
 OUTPUT: NONE
 -----------------------------------------------------------
