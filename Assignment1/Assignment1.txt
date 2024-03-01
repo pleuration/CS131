@@ -1,0 +1,89 @@
+ASSIGNMENT 1
+-----------------------------------------------------------
+QUESTION 1
+Used mkdir Assignment1 to make directory of Assignment 1
+OUTPUT: NONE
+-----------------------------------------------------------
+QUESTION 2A
+I used echo $SHELL to echo the shell by using the $SHELL global variable
+OUTPUT: /bin/bash
+-----------------------------------------------------------
+QUESTION 2B
+I used echo $HOME to echo the home directory by using the $HOME global variable
+OUTPUT: /mnt/scratch/FA23_CS131_Ashish/robertosp24
+-----------------------------------------------------------
+QUESTION 3
+My UID is 1195. I belong to group robertosp24 (myself) and group S77. 
+I used command id robertosp24.
+OUTPUT:
+uid=1195(robertosp24) gid=1195(robertosp24) groups=1195(robertosp24),77(S77)
+-----------------------------------------------------------
+QUESTION 4
+Created myDir directory with mkdir myDir under Assignment1 folder.
+Removed write permissions from self from myDir by using chmod -w myDir
+cd myDir works, ls, and ls -l works in that directory. Making files DOES NOT.
+OUTPUT WHEN TRYING TO MAKE A FILE IN MYDIR:
+touch: cannot touch 'file': Permission denied
+-----------------------------------------------------------
+QUESTION 5
+Created myDir2 with mkdir myDir2 after cd .. and myDir3 with mkdir myDir3
+OUTPUT: NONE
+-----------------------------------------------------------
+QUESTION 6
+Created myFile.txt in myDir2 with touch myDir2/myFile.txt
+Moved myFile.txt from myDir2 to myDir3 with mv myDir2/myFile.txt myDir3
+OUTPUT: NONE
+-----------------------------------------------------------
+QUESTION 6B
+Used the free -h command to get the data in Mi, then looked under total to determine total memory to be 69GiB/Gigibytes or ~65803.5 Mib/Mebibytes after conversion
+OUTPUT:
+              total        used        free      shared  buff/cache   available
+Mem:           69Gi        32Gi        18Gi       3.4Gi        18Gi        32Gi
+Swap:         4.0Gi          0B       4.0Gi
+------------------------------------------------------------
+QUESTION 9
+Identified OS version by identifying and looking at os-release file in /etc/
+Usec cat command on os-release to open and see os-release file to determine
+OS information.
+OS Identified: Red Hat Enterprise Linux 8.6
+OUTPUT:
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+---------------------------------------------------------
+QUESTION 10
+Used ls -l on os-release to show permissions for that file, which seem to be
+read, write, and execute (rwx) for users, owner, and groups. 
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+---------------------------------------------------------
